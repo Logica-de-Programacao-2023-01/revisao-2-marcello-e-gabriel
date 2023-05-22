@@ -30,7 +30,7 @@ func CalculateTotalSalary(employee *Employee) (float64, error) {
 	}
 	salarioTot := employee.BaseSalary + somabonus
 
-	if employee.Name == "" {
+	if employee == nil {
 		return 0, fmt.Errorf("Not implemented yet")
 	}
 
